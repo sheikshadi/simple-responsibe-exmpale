@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple responsive flex</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 10px;
+        }
+        .box{
+            background-color: aquamarine;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .container2{
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+        .item{
+            width: 100px;
+            background-color: yellowgreen;
+            padding: 10px;
+            border: 1px solid saddlebrown;
+        }
+
+        @media screen and (max-width:576px) {
+            .container{
+                /* ektar jonno eta hobe */
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>First Box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nobis deleniti necessitatibus nesciunt dolorem dolor eius, fuga eaque velit neque.</p>
+        </div>
+        <div class="box">
+            <h3>second Box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nobis deleniti necessitatibus nesciunt dolorem dolor eius, fuga eaque velit neque.</p>
+        </div>
+    </div>
+    <div class="container2">
+        <!-- .item*10{$} -->
+         <div class="item">1</div>
+         <div class="item">2</div>
+         <div class="item">3</div>
+         <div class="item">4</div>
+         <div class="item">5</div>
+         <div class="item">6</div>
+         <div class="item">7</div>
+         <div class="item">8</div>
+         <div class="item">9</div>
+         <div class="item">10</div>
+    </div>
+</body>
+</html>
